@@ -1,0 +1,9 @@
+{
+    "name": "Sainadh",
+    "age": 23,
+    "skills": ["Java", "Python", "Jenkins"],
+    "location": {
+        "city": "Vijayawada",
+        "state": "Andhra Pradesh"
+    }
+}
