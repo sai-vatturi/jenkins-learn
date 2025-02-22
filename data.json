@@ -1,9 +1,29 @@
-{
-    "name": "Sainadh",
-    "age": 23,
-    "skills": ["Java", "Python", "Jenkins"],
-    "location": {
-        "city": "Vijayawada",
-        "state": "Andhra Pradesh"
+[
+    {
+        "name": "Sainadh",
+        "age": 23,
+        "skills": ["Java", "Python", "Jenkins"],
+        "location": {
+            "city": "Vijayawada",
+            "state": "Andhra Pradesh"
+        }
+    },
+    {
+        "name": "John",
+        "age": 30,
+        "skills": ["Angular", "Node.js", "AWS"],
+        "location": {
+            "city": "Hyderabad",
+            "state": "Telangana"
+        }
+    },
+    {
+        "name": "Alice",
+        "age": 27,
+        "skills": ["React", "Docker", "Kubernetes"],
+        "location": {
+            "city": "Bangalore",
+            "state": "Karnataka"
+        }
     }
-}
+]
