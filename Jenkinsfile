@@ -5,8 +5,8 @@ pipeline {
         stage('Read and Iterate JSON') {
             steps {
                 script {
-                    // Import JsonSlurper
-                    import groovy.json.JsonSlurper
+                    // Use JsonSlurper without explicit import
+                    def jsonSlurper = new groovy.json.JsonSlurper()
 
                     // Ensure the file exists
                     def jsonFile = 'data.json'
@@ -16,7 +16,7 @@ pipeline {
 
                     // Read and parse the JSON content
                     def jsonText = readFile(jsonFile)
-                    def jsonArray = new JsonSlurper().parseText(jsonText)
+                    def jsonArray = jsonSlurper.parseText(jsonText)
 
                     // Iterate through the array and print values
                     jsonArray.each { obj ->
